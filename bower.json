@@ -1,0 +1,22 @@
+{
+  "name": "leafwalk",
+  "authors": [
+    "Cathy Chi <cathy.chi.chan@gmail.com>"
+  ],
+  "description": "A mobile and web application using Javascript for people to discover local open spaces.",
+  "main": "index.html",
+  "keywords": [
+    "LeafWalk",
+    "Coursera"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

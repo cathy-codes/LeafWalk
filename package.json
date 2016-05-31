@@ -1,0 +1,14 @@
+{
+  "name": "leafwalk",
+  "version": "1.0.0",
+  "description": "A web and mobile application using Javascript for people to discover local open spaces.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cathy Chi",
+  "license": "ISC",
+  "devDependencies": {
+    "jshint": "^2.9.2"
+  }
+}
