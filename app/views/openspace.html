@@ -1,0 +1,25 @@
+<div id="openspace" ng-controller="OpenSpaceDetailsController">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>LeafWalk</h1>
+        <h2 ng-if="showOpenSpace">{{openspace.name}}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12" ng-if="!showOpenSpace">
+        <h3>{{message}}</h3>
+      </div>
+      <div class="col-xs-12" ng-if="showOpenSpace">
+        <p>{{openspace.description}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <a href="#" class="btm-btn btn">BACK</a>
+      </div>
+    </div>
+  </div>
+</div>

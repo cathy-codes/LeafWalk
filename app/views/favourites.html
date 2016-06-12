@@ -1,0 +1,25 @@
+<div id="search" ng-controller="FavouriteController">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>LeafWalk</h1>
+        <h2>Favourites</h2>
+        <span>{{favourites.length}} favourites</span>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+          <li ng-repeat="favourite in favourites"><a href="#">Burgess Park</a> <i class="fa fa-star" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <a href="#" class="btm-btn btn">BACK</a>
+      </div>
+    </div>
+  </div>
+</div>

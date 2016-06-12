@@ -1,0 +1,32 @@
+<div id="search" ng-controller="OpenSpacesController">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>LeafWalk</h1>
+        <h2>Local green spaces</h2>
+        <span ng-if="showResults">{{openspaces.length}} results</span>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12" ng-if="!showResults">
+        <h3>{{message}}</h3>
+      </div>
+      <div class="col-xs-12" ng-if="showResults">
+        <ul>
+          <li ng-repeat="openspace in openspaces">
+            <!--<a ui-sref="app.openspacedetails{{id: openspace._id}}">{{openspace.name}}</a>-->
+            <a ui-sref="app.openspacedetails({id: openspace.id})">{{openspace.name}}</a>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <a href="#" class="btm-btn btn">BACK</a>
+      </div>
+    </div>
+  </div>
+</div>
